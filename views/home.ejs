@@ -28,7 +28,7 @@
                   </thead>
                   <tbody>
                     <% if (users){ 
-                      var srno = 1
+                      var srno = counter
                       users.forEach( user => {
                       %>
                      
@@ -47,6 +47,19 @@
                     <% }) } %> 
                   </tbody>
                 </table> 
+                <nav aria-label="...">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item <%= !hasPrevPage ?'disabled':'' %> ">
+                      <a class="page-link" href="/?page=<%= prevPage %>" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <% for(let i = 1; i <= totalPages; i++ ){ %>
+                      <li class="page-item <%= i== currentPage ?'active':'' %>"><a class="page-link" href="/?page=<%= i %>"><%= i %></a></li>
+                    <% } %>
+                    <li class="page-item <%= !hasNextPage ?'disabled':'' %>">
+                      <a class="page-link" href="/?page=<%= nextPage %>">Next</a>
+                    </li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>
