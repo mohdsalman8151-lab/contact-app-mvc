@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 export const getContacts =  async (req,res) => {
     try{
         // const users = await Contact.find();
-        const {page = 1, limit = 3} = req.query
+        const {page = 1, limit = 10} = req.query
         const option = {
             page: parseInt(page),
             limit: parseInt(limit)

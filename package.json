@@ -12,11 +12,21 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "ejs": "^3.1.10",
     "express": "^5.2.1",
-    "mongoose": "^9.0.0",
+    "mongoose": "^9.1.5",
     "mongoose-paginate-v2": "^1.9.1",
     "nodemon": "^3.1.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohdsalman8151-lab/contact-app-mvc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mohdsalman8151-lab/contact-app-mvc/issues"
+  },
+  "homepage": "https://github.com/mohdsalman8151-lab/contact-app-mvc#readme"
 }
